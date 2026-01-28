@@ -7,8 +7,12 @@ func main() {
 	// card := "Five of Diamonds"
 	card := newCard()
 	fmt.Println(card)
+	cards := []string{"Ace of Diamonds", "Two of Diamonds", newCard()}
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
 }
 
 func newCard() string {
-	return "Five of Diamonds..."
+	return "Five of Diamonds"
 }
