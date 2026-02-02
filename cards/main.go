@@ -10,4 +10,6 @@ func main() {
 	hand.print()
 	fmt.Println("###############################################")
 	remainingCards.print()
+	fmt.Println("###############################################")
+	cards.saveToFile("mycards")
 }
