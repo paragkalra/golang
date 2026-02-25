@@ -40,7 +40,10 @@ func main() {
 			zipCode: 12345,
 		},
 	}
-	jim.updateName("Alice Updated")
+	jim.updateName("Alice Not Updated")
+	jim.print()
+	jimPointer := &jim
+	jimPointer.updateNamePointer("Alice Updated Via Pointer")
 	jim.print()
 	jim.updateNamePointer("Alice Updated Again")
 	jim.print()
